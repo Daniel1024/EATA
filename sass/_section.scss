@@ -1,0 +1,222 @@
+@media (min-width: 768px) {
+  .container {
+    width: initial!important;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px!important;
+  }
+}
+.contenido {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  .item-half, .item-full {
+    background-color: white;
+    //height: 150px;
+    border: 2px solid $verde;
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+  }
+  @media (min-width: 768px) {
+    .item-half {
+      width: 49%;
+    }
+  }
+  .item-half.doble {
+    border: none;
+    margin: 0;
+    //height: initial;
+    display: flex;
+    //flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    >div {
+      border-radius: 15px;
+      margin-bottom: 15px;
+      border: 2px solid $verde;
+      //height: 150px;
+      width: 100%;
+    }
+  }
+  a {
+    display: inline-block;
+    background-color: #CACACA;
+    border-radius: 15px;
+    color: black;
+    text-decoration: none;
+    padding: 4px 14px 6px 14px;
+    transition: $transition;
+    &:hover {
+      background-color: #545454;
+      color: white;
+    }
+  }
+}
+.calidad-edu {
+  display: flex;
+  //height: initial!important;
+  align-items: center;
+  .img {
+    background-image: url('../img/post-1.jpg');
+    background-size: cover;
+    background-position: 50% 0;
+    padding-bottom: 60.84%;
+    width: 50%;
+    border-radius: 13px 0 0 13px;
+  }
+  .txt {
+    width: 50%;
+    text-align: center;
+    padding: 0 10px;
+    h2, p{
+      font-size: 14px;
+    }
+    h2 {
+      color: $azul;
+    }
+  }
+  @media (min-width: 768px) {
+    .img {
+      width: 60%;
+    }
+    .txt {
+      width: 40%;
+    }
+  }
+}
+.eata-virtual {
+  //height: initial!important;
+  background-image: url('../img/post-2.jpg');
+  background-size: cover;
+  background-position: 50% 0;
+  padding-top: 50%;
+  text-align: center;
+  a {
+    position: relative;
+    bottom: 10px;
+  }
+}
+.ninos-feliz {
+  background-image: url('../img/post-3.jpg');
+  background-size: cover;
+  padding-top: 83%;
+  text-align: right;
+  @media (min-width: 420px) {
+    padding-top: 90%;
+  }
+  @media (min-width: 768px) {
+    padding-top: 56%;
+    background-position: 20% 0;
+  }
+  &:hover {
+    background-image: url('../img/post-3-hover.jpg');
+  }
+  a {
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+.medicion {
+  background-image: url('../img/post-4.jpg');
+  background-size: cover;
+  background-position: 50% 0;
+  padding-top: 100%;
+  text-align: right;
+  @media (min-width: 768px) {
+    padding-top: 61%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  a {
+    position: relative;
+    bottom: 50px;
+    right: 10px;
+    @media (min-width: 420px) {
+      bottom: 70px;
+    }
+    @media (min-width: 768px) {
+      bottom: 10px;
+    }
+  }
+}
+.talento {
+  padding-top: 65%;
+  position: relative;
+  >div {
+    position: absolute;
+    top: 0;
+    background-image: url('../img/post-5.jpg');
+    background-size: cover;
+    background-position: 50%;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+    >div {
+      position: absolute;
+      bottom:10px;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+  }
+  p {
+    color: $azul;
+    padding: 0 10px;
+  }
+}
+.coaching {
+  padding-top: 65%;
+  position: relative;
+  >div {
+    position: absolute;
+    top: 0;
+    background-image: url('../img/post-6.jpg');
+    background-size: cover;
+    background-position: 50%;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+  }
+  h2 {
+    color: $azul;
+  }
+}
+.siga {
+  .img {
+    border-radius: 13px 13px 0 0;
+    background-image: url('../img/post-7.jpg');
+    background-size: cover;
+    padding-top: 65%;
+  }
+  .txt {
+    text-align: center;
+    margin: 20px;
+    img {
+      width: 75%;
+    }
+    h2 {
+      color: #7F7F7F;
+    }
+  }
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    .img {
+      width: 60%;
+      border-radius: 13px 0 0 13px;
+      padding-top: 45%;
+    }
+    .txt {
+      //margin: 10px;
+      width: 40%;
+    }
+  }
+}

@@ -19,42 +19,79 @@ html(lang="es")
           a(href="https://www.instagram.com/", target="_blank"): i.fa.fa-instagram(aria-hidden="true")
       div.container
         nav
+          a#menu(href="#")
+            i.fa.fa-bars(aria-hidden="true")
+            p MENU
           ul
             li: a(href="#") INICIO
             li: a(href="#") PRODUCTOS / SERVICIOS
             li: a(href="#") CONTÁCTENOS
             li: a(href="#") NUESTRAS TRIBUS
-    section.contenido.container
-      article.item-half.doble
-        div.calidad-edu
-          div.img
-            img(src="img/post-1.jpg", alt="Calidad educativa")
-          div.txt
-            h2 CAPACITACIÓN
-            p Auditoría y Asersoría a la Calidad Educativa
+    section.container
+      div.contenido
+        article.item-half.doble
+          div.calidad-edu
+            div.img
+            div.txt
+              h2 CAPACITACIÓN
+              p Auditoría y Asersoría a la Calidad Educativa
+              a(href="#") Leer mas
+          div.eata-virtual
             a(href="#") Leer mas
-        div.eata-virtual
-          img(src="img/post-2.jpg", alt="Eata Virtual")
-          div
-            a(href="#") Leer mas
-      article.item-half.ninos-feliz
-        a(href="#") Leer mas
-        figure.fixedratio
-      article.item-half.medicion
-        a(href="#") Leer mas
-        figure.fixedratio
-      article.item-half.doble
-        div.talento
-          p DESARROLLO DEL TALENTO EN LAS ORGANIZACIONES PÚBLICAS Y PRIVADAS
-          img(src="img/post-5.jpg", alt="Calidad educativa")
+        article.item-half.ninos-feliz
           a(href="#") Leer mas
-        div.coaching
-          h2 COACHING
-          img(src="img/post-6.jpg", alt="Calidad educativa")
+        article.item-half.medicion
           a(href="#") Leer mas
-      article.item-full
+        article.item-half.doble
+          div.talento
+            div
+              p DESARROLLO DEL TALENTO EN LAS ORGANIZACIONES PÚBLICAS Y PRIVADAS
+              div: a(href="#") Leer mas
+          div.coaching
+            div
+              h2 COACHING
+              a(href="#") Leer mas
+        article.item-full
+          div.siga
+            div.img
+              //img(src="img/post-7.jpg", alt="SIGA")
+            div.txt
+              img(src="img/logo-3.png", alt="SIGA logo")
+              h2 Gestión del Aprendizaje
+              p El reto para los docentes es achicar la brecha tecnológica existente. La Plataforma SIGA permite la utilización de Tecnología de una forma simple.
+              a(href="#") Leer mas
+    footer
+      div.container
+        div.footer
+          .footer-item
+            .titulo Sobre EATA
+            br
+            .content
+              |Misión, Visión
+              br
+              |Valor Empresarial
+              a(href="#") > ver más ...
+          .footer-item
+            .titulo Valor
+            br
+            .content
+              |Responsabilidad Social
+              br
+              |Fundación Eata
+              a(href="#") > ver más ...
+          .footer-item
+            .titulo Redes Sociales
+            br
+            .content
+              |Facebook
+              br
+              |Twitter
+              br
+              |YouTube
+              br
+              |Linkedin
+              a(href="#") > ver más ...
+        h3 Copyright © 2016 EATA
     //Cargando jQuery
-    script(src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous")
-
-
-
+    script(src="https://code.jquery.com/jquery-2.2.3.min.js", integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=", crossorigin="anonymous")
+    script(src="js/index.js")
