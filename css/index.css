@@ -419,24 +419,22 @@ textarea {
   margin-left: auto;
 }
 
+/*
 @media (min-width: 768px) {
   .container {
     width: 750px;
   }
 }
-
 @media (min-width: 992px) {
   .container {
     width: 970px;
   }
 }
-
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
   }
 }
-
 .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
@@ -1284,16 +1282,12 @@ nav ul li > a:hover {
 
 @media (min-width: 768px) {
   .container {
-    width: initial !important;
   }
 }
-
 @media (min-width: 1200px) {
   .container {
-    width: 1170px !important;
   }
 }
-
 .contenido {
   display: -webkit-flex;
   display: -ms-flexbox;
