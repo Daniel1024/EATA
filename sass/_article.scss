@@ -1,0 +1,154 @@
+.calidad-educativa {
+	display: flex;
+	//height: initial!important;
+	align-items: center;
+	.img {
+		/*background-image: url('../img/post-1.jpg');
+		background-size: cover;
+		background-position: 50% 0;
+		padding-bottom: 60.84%;
+		width: 50%;*/
+		flex-basis: 55%;
+		img {
+			border-radius: 13px 0 0 13px;
+		}
+	}
+	.txt {
+		//width: 50%;
+		flex-basis: 45%;
+		text-align: center;
+		padding: 0 10px;
+		@media (max-width: 845px) {
+			h2 {
+				font-size: 17px;
+			}
+		}
+		@media (max-width: 500px) {
+			h2, p{
+				font-size: 14px;
+			}
+		}
+		h2 {
+			color: $azul;
+		}
+	}/*
+	@media (min-width: 768px) {
+		.img {
+			width: 60%;
+		}
+		.txt {
+			width: 40%;
+		}
+	}*/
+}
+.eata-virtual {
+	position: relative;
+}
+.ninos-felices {
+	position: relative;
+	#normal {
+		z-index: 1;
+	}
+	#hover {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+	&:hover {
+		#normal {
+			z-index: -1;
+		}
+		#hover {
+			z-index: 1;
+		}
+	}
+}
+.medicion {
+	position: relative;
+	@media (max-width: 500px) {
+		a {
+			margin-bottom: 70px!important;
+			margin-left: 50px;
+		}
+	}
+	@media (max-width: 420px) {
+		a {
+			margin-bottom: 50px!important;
+		}
+	}
+}
+
+.talento {
+	position: relative;
+	@media (max-width: 500px) {
+		p {
+			display: none;
+		}
+	}
+}
+
+.coaching {
+	position: relative;
+	p {
+		font-weight: bold;
+	}
+}
+
+.siga {
+	display: flex;
+	align-items: center;
+	.img {
+		/*
+		background-image: url('../img/post-7.jpg');
+		background-size: cover;
+		padding-top: 65%;*/
+		flex-basis: 60%;
+		img {
+			border-radius: 13px 0 0 13px;
+		}
+	}
+	.txt {
+		text-align: center;
+		margin: 20px;
+		flex-basis: 40%;
+		img {
+			width: 75%;
+			border: none;
+			margin: 0 auto;
+		}
+		h2 {
+			color: #7F7F7F;
+		}
+	}
+	@media (max-width: 767px) {
+		flex-wrap: wrap;
+		.img {
+			flex-basis: 100%;
+			img {
+				border-radius: 13px 13px 0 0;
+			}
+		}
+		.txt {
+			flex-basis: 100%;
+			img {
+				margin-top: 20px;
+			}
+		}
+	}
+  /*
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    .img {
+      width: 60%;
+      border-radius: 13px 0 0 13px;
+      padding-top: 45%;
+    }
+    .txt {
+      //margin: 10px;
+      width: 40%;
+    }
+  }
+  */
+}
